@@ -19,11 +19,11 @@ Content-Type: audio/mpeg
 
 # @name create-transcription
 
-POST http://localhost:3333/videos/70a35ce4-f024-4a01-bcd4-d79fe404cdc0/transcription
+POST http://localhost:3333/videos/4b2861d9-026c-420a-b967-a29ee66e5cea/transcription
 Content-Type: application/json
 
 {
-    "prompt": "Scandinavia, springtime"
+    "prompt": "henz, ed sheeran"
 }
 
 ###
@@ -34,7 +34,7 @@ POST http://localhost:3333/ai/complete
 Content-Type: application/json
 
 {
-    "videoId": "70a35ce4-f024-4a01-bcd4-d79fe404cdc0",
+    "videoId": "1a012e7d-f2f1-4fd9-af6f-7fab12feee86",
     "temperature": 0.5,
-    "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+    "prompt": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
 }
